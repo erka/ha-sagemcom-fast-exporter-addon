@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 set -e
 
-ARGS="-addr=$(bashio::config 'addr') -username=$(bashio::config 'username') -password=$(bashio::config 'password') -host=$(bashio::config 'host') -auth-method=$(bashio::config 'authMethod') -log-level=$(bashio::config 'logLevel')"
+ARGS="-addr=$(bashio::config 'addr') -username=$(bashio::config 'username') -password=$(bashio::config 'password') -host=$(bashio::config 'host') -auth-method=$(bashio::config 'authMethod') -log-level=$(bashio::config 'logLevel') -scraper=$(bashio::config 'scraper')"
 
 bashio::log.info "Starting"
 

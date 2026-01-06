@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Sagemcom Fast Exporter
-version: "v0.3.1"
+version: "v0.3.2-nightly"
 slug: sagemcom_fast_exporter
 description: Unofficial stats exporter
 url: "https://github.com/erka/ha-sagemcom-fast-exporter-addon/tree/main/sagemcom-fast-exporter"
@@ -20,6 +20,7 @@ options:
   username: "admin"
   password: ""
   refresh: "1h0m0s"
+  scraper: "standard"
 schema:
   addr: "str?"
   authMethod: "list(SHA512|MD5)"
@@ -28,3 +29,4 @@ schema:
   password: "password?"
   refresh: "str?"
   host: "str?"
+  scraper: "list(standard|lite)"
